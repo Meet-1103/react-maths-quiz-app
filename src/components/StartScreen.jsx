@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../styles/StartScreen.css";
 
 const StartScreen = ({ quizName, onUserChoiceSubmitted }) => {
-  let userSelectedQuestionCount;
-  let userSelectedRandomRange;
+  const [userSelectedQuestionCount, setUserSelectedQuestionCount] = useState();
+  const [userSelectedRandomRange, setUserSelectedRandomRange] = useState();
   const [userSelectedOperators, setUserSelectedOperators] = useState([
     {
       operator: "+",
@@ -38,11 +38,11 @@ const StartScreen = ({ quizName, onUserChoiceSubmitted }) => {
   };
 
   const onSelectQuestionCount = (e) => {
-    userSelectedQuestionCount = e.target.value;
+    setUserSelectedQuestionCount(e.target.value);
   };
 
   const onSelectRandomNumberRange = (e) => {
-    userSelectedRandomRange = e.target.value;
+    setUserSelectedRandomRange(e.target.value);
   };
 
   return (

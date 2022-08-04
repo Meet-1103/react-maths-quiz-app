@@ -30,14 +30,6 @@ const QuizContainer = ({ quizName }) => {
       userSelectedOperatorsParams = ["+", "-", "*", "/"];
     }
 
-    if (userSelectedQuestionCount === undefined) {
-      userSelectedQuestionCount = 20;
-    }
-
-    if (userSelectedRandomRange === undefined) {
-      userSelectedRandomRange = 10;
-    }
-
     setQuestions(
       quizQuestions(
         userSelectedOperatorsParams,
