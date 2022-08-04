@@ -1,0 +1,74 @@
+.end-screen-container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  overflow-y: scroll;
+  width: 30vw;
+  padding: 0px 30px 20px 30px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.end-screen-container::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.end-screen-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgb(128, 123, 123);
+}
+
+.end-screen-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 255, 85, 0.995);
+  outline: 1px solid slategrey;
+}
+
+.quiz-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 255, 85, 0.995);
+  font-size: 2.1rem;
+  font-weight: 700;
+  min-height: 80px;
+  max-height: 80px;
+  position: sticky;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  background-color: white;
+  top: 0px;
+  z-index: 1000;
+}
+
+.question-list-with-answer {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-list {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  padding: 8px 8px 8px 10px;
+  background-color: rgba(0, 255, 85, 0.995);
+  color: rgb(5, 5, 7);
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.wrong-answer-question-list {
+  background-color: rgba(255, 3, 3, 0.712);
+}
+
+.answer-list {
+  padding: 8px 8px 8px 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(204, 220, 217, 0.773);
+  color: black;
+}

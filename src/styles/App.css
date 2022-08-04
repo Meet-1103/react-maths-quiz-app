@@ -1,0 +1,19 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.quiz-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.quiz-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
