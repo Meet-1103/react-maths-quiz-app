@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "../styles/StartScreen.css";
 
 const StartScreen = ({ quizName, onUserChoiceSubmitted }) => {
-  const [userSelectedQuestionCount, setUserSelectedQuestionCount] = useState();
-  const [userSelectedRandomRange, setUserSelectedRandomRange] = useState();
+  const [userSelectedQuestionCount, setUserSelectedQuestionCount] =
+    useState(20);
+  const [userSelectedRandomRange, setUserSelectedRandomRange] = useState(10);
   const [userSelectedOperators, setUserSelectedOperators] = useState([
     {
       operator: "+",
